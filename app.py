@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from main import process_omr  # your main function
+from src.main import process_omr  # your main function
 
 st.title("OMR Sheet Evaluator")
 uploaded_files = st.file_uploader("Upload OMR images", accept_multiple_files=True, type=["png", "jpg", "jpeg"])
