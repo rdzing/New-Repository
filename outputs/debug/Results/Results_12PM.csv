@@ -1,0 +1,19 @@
+result_csv_header = [
+    'ImagePath', 'FilePath', 'NewFilePath',  # Existing columns
+    'Score',  # Existing score column
+    *template.output_columns,  # Keep existing dynamic columns
+    'Part_D_Raw',
+    'Part_D_Sum',
+    'Marking_Raw',
+    'Marking_Sum',
+    'APAAR_ID',
+    'Exam_Code'
+]
+
+# Initialize Results.csv with this header if it doesn't exist
+results_csv_path = outputs_namespace.files_obj["Results"]
+if not os.path.exists(results_csv_path) or os.path.getsize(results_csv_path) == 0:
+    with open(results_csv_path, 'w', newline='') as f:
+        writer = csv.writer(f, quoting=QUOTE_NONNUMERIC)
+        writer.writerow(result_csv_header)
+

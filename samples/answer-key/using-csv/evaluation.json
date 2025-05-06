@@ -1,0 +1,26 @@
+{
+  "scoring": {
+    "default_points": 1,
+    "questions": {
+      "q1": {"answer": "C", "points": 1},
+      "q2": {"answer": "B", "points": 1},
+      "q3": {"answer": "B", "points": 1},
+      "q4": {"answer": "B", "points": 1},
+      "q5": {"answer": "C", "points": 1},
+      "q6": {"answer": "C", "points": 1},
+      "q7": {"answer": "A", "points": 1},
+      "q8": {"answer": "A", "points": 1},
+      "q9": {"answer": "A", "points": 1},
+      "q10": {"answer": "B", "points": 1},
+      "q11": {"answer": "C", "points": 1},
+      "q12": {"answer": "C", "points": 1},
+      "q13": {"answer": "A", "points": 1},
+      "q14": {"answer": "A", "points": 1},
+      "q15": {"answer": "B", "points": 1}
+    }
+  },
+  "special_processing": {
+    "part_d_sum": true,
+    "marking_sum": true
+  }
+}

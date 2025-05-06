@@ -1,0 +1,127 @@
+{
+  "pageDimensions": [
+    1083,
+    1702
+  ],
+  "bubbleDimensions": [
+    22,
+    22
+  ],
+  "customLabels": {
+    "Roll": [
+      "roll1..12"
+    ],
+    "part_d": [
+      "part_d1..6"
+    ],
+    "marking": [
+      "marking1..3"
+    ]
+  },
+  "fieldBlocks": {
+    "Roll": {
+      "fieldType": "QTYPE_INT",
+      "fieldLabels": [
+        "roll1..12"
+      ],
+      "bubblesGap": 40,
+      "labelsGap": 44,
+      "origin": [
+        135,
+        205
+      ]
+    },
+    "Int_Block_Q1": {
+      "fieldType": "QTYPE_INT",
+      "fieldLabels": [
+        "q1_1",
+        "q1_2",
+        "q1_3"
+      ],
+      "bubblesGap": 40,
+      "labelsGap": 44,
+      "origin": [
+        835,
+        205
+      ]
+    },
+    "MCQ_Block_Q1": {
+      "fieldType": "QTYPE_MCQ4",
+      "fieldLabels": [
+        "q1..5"
+      ],
+      "bubblesGap": 42,
+      "labelsGap": 39,
+      "origin": [
+        135,
+        750
+      ]
+    },
+    "MCQ_Block_Q2": {
+      "fieldType": "QTYPE_MCQ4",
+      "fieldLabels": [
+        "q6..10"
+      ],
+      "bubblesGap": 42,
+      "labelsGap": 39,
+      "origin": [
+        490,
+        750
+      ]
+    },
+    "MCQ_Block_Q3": {
+      "fieldType": "QTYPE_MCQ4",
+      "fieldLabels": [
+        "q11..15"
+      ],
+      "bubblesGap": 42,
+      "labelsGap": 39,
+      "origin": [
+        800,
+        750
+      ]
+    },
+    "Part_D_Block": {
+      "fieldType": "QTYPE_INT_0_TO_5",
+      "fieldLabels": [
+        "part_d1..6"
+      ],
+      "bubblesGap": 42,
+      "labelsGap": 39,
+      "origin": [
+        170,
+        1110
+      ]
+    },
+    "Marking_Block": {
+      "fieldType": "QTYPE_INT_0_TO_6",
+      "fieldLabels": [
+        "marking1..3"
+      ],
+      "bubblesGap": 42,
+      "labelsGap": 39,
+      "origin": [
+        135,
+        1500
+      ]
+    }
+  },
+  "preProcessors": [
+    {
+      "name": "CropPage",
+      "options": {
+        "morphKernel": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "name": "CropOnMarkers",
+      "options": {
+        "relativePath": "omr_marker.jpg",
+        "sheetToMarkerWidthRatio": 17
+      }
+    }
+  ]
+}
